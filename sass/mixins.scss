@@ -1,0 +1,27 @@
+@mixin container {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: 660px) {
+    width: 620px;
+  }
+
+  @media (min-width: 960px) {
+    width: 940px;
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin no-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
